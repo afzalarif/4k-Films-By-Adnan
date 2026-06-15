@@ -1,0 +1,6 @@
+{
+  "name": "Nature Conservation Platform",
+  "description": "A premium cinematic Coming Soon platform for Adnan's upcoming nonprofit nature conservation initiative, featuring a video showcase, countdown, roadmap, newsletter signup, and interactive elements.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

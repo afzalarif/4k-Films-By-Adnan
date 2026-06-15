@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+  --font-playfair: "Playfair Display", serif;
+
+  --color-emerald-450: #10b981;
+  --color-emerald-750: #045d3e;
+  --color-emerald-850: #023a22;
+  --color-stone-150: #e7e5e4;
+  --color-stone-250: #dad7cd;
+  --color-stone-850: #1c1917;
+  --color-stone-950: #0c0a09;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a; /* Slate-like */
+}
+::-webkit-scrollbar-thumb {
+  background: #059669; /* Emerald 600 */
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #10b981; /* Emerald 500 */
+}
+
+/* Subtle infinite rotational loop for cinematic elements */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 16s linear infinite;
+}
